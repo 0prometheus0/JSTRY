@@ -34,6 +34,13 @@
         float: right;
         margin-right: 173px;
     }
+    div#contactForm{
+        width: 400px;
+        height: 600px;
+        border: 1px solid blue;
+        float: left;
+        margin-top: 25px;
+    }
 </style>
 <body>
     <div id="general">
@@ -87,6 +94,27 @@
                 </b>
             </p>
             <p>You can press icons to access my social media accounts.</p>
+        </div>
+        <div id="contactForm">
+            <form>
+                <p style="text-align: center; font-size: 28px;"><b><strong>CONTACT FORM</strong></b></p>
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="surname"><b>Surname</b></label><br>
+            <input type="text" name="surname" id="surname"><br><br>
+            <label for="phone"><b>Phone Number</b></label><br>
+            <input type="text" name="phone" id="phone"><br><br>
+            <label for="email"><b>E-mail</b></label><br>
+            <input type="email" name="email" id="email"><br><br>
+            <b>Reason for Contact</b> <br>
+            Special
+            <input type="radio" name="contactreason" value="special">
+            Business
+            <input type="radio" name="contactreason" value="business" checked> <br><br>
+            <input type="submit"  value="Send">
+            <button type="reset">Clear</button>
+            </form>
+            
         </div>
     </div>
 </body>
